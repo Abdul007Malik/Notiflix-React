@@ -1,0 +1,41 @@
+{
+  "name": "notiflix-react",
+  "title": "Notiflix for React",
+  "main": "dist/notiflix-react-aio-1.0.0.js",
+  "filename": "dist/notiflix-react-1.0.0.js",
+  "style": "dist/notiflix-react-1.0.0.css",
+  "version": "1.0.0",
+  "description": "Notiflix is a JavaScript library for client-side non-blocking notifications, popup boxes, loading indicators, and more...",
+  "homepage": "https://github.com/notiflix/Notiflix-React",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "notification",
+    "notifications",
+    "notiflix",
+    "react",
+    "react notifications",
+    "react plugins",
+    "javascript",
+    "client-side",
+    "non-blocking"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/notiflix/Notiflix-React.git"
+  },
+  "bugs": {
+    "url": "https://github.com/notiflix/Notiflix-React/issues"
+  },
+  "author": "Furkan MT",
+  "contributors": [
+    "Furkan MT (https://www.notiflix.com)"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  ]
+}
