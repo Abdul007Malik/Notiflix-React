@@ -6,7 +6,7 @@
 Notiflix is a pure JavaScript library for client-side non-blocking notifications that makes your React projects much better.
 
 ### Current Version
-1.0.0 [*](https://github.com/notiflix/Notiflix-React/blob/master/ReleaseNotes.md)
+1.1.0 [*](https://github.com/notiflix/Notiflix-React/blob/master/ReleaseNotes.md)
 
 ### Website
 https://www.notiflix.com/react
@@ -52,8 +52,8 @@ import Notiflix from "notiflix-react";
 ```js
 import React, { Component } from "react";
 // ...
-import Notiflix from "notiflix-react/dist/notiflix-react-1.0.0";
-import "notiflix-react/dist/notiflix-react-1.0.0.css";
+import Notiflix from "notiflix-react/dist/notiflix-react-1.1.0";
+import "notiflix-react/dist/notiflix-react-1.1.0.css";
 // ...
 ```
 
