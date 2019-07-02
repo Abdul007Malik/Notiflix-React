@@ -6,7 +6,7 @@
 Notiflix is a JavaScript library for client-side non-blocking notifications, popup boxes, loading indicators, and more to that makes your React projects much better.
 
 ### Current Version
-1.2.0 [*](https://github.com/notiflix/Notiflix-React/blob/master/ReleaseNotes.md)
+1.3.0 [*](https://github.com/notiflix/Notiflix-React/blob/master/ReleaseNotes.md)
 
 ### Website
 https://www.notiflix.com/react
@@ -52,8 +52,8 @@ import Notiflix from "notiflix-react";
 ```js
 import React, { Component } from "react";
 // ...
-import Notiflix from "notiflix-react/dist/notiflix-react-1.2.0";
-import "notiflix-react/dist/notiflix-react-1.2.0.css";
+import Notiflix from "notiflix-react/dist/notiflix-react-1.3.0";
+import "notiflix-react/dist/notiflix-react-1.3.0.css";
 // ...
 ```
 
@@ -138,26 +138,35 @@ Notiflix.Report.Success(
   'Title',
   'Message',
   'Button Text',
-function(){
-  // callback
-});
+  function(){
+    // callback
+  }
+);
 ```
 --_--_--
 
 4.3- Notiflix Confirm module
 
 ```js
-Notiflix.Confirm.Show('Title','Message','Ok Button Text');
+Notiflix.Confirm.Show('Title','Message','Ok Button Text','Cancel Button Text');
 
-// e.g. with a callback
+// e.g. with callback
 Notiflix.Confirm.Show(
   'Title',
   'Message',
   'Ok Button Text',
   'Cancel Button Text',
-function(){
-  // callback
-});
+
+  // ok button callback
+  function(){
+    // codes...
+  },
+
+  // cancel button callback => v1.3.0 and next versions
+  function(){
+    // codes...
+  }
+);
 ```
 
 --_--_--
@@ -398,7 +407,7 @@ Notiflix.Loading.Init({
 ---------
 
 #### Copyright
-Copyright © 2019 Notiflix
+Copyright © 2019 Notiflix React
 
 #### License
 MIT license - https://opensource.org/licenses/MIT
