@@ -1,3 +1,8 @@
+@1.3.1
+* **Changed:** Code Review.
+
+----- 
+
 @1.3.0
 * **Added:** An optional callback function can be used with Deny Button in "Notiflix Confirm" module.
 
@@ -7,6 +12,7 @@
 * **Changed:** Code Review.
 
 * **Added:** All modules can be used even if they didn't initialized. The first call will initialize the module once. (With default settings.)
+
 ----- 
 
 @1.1.0

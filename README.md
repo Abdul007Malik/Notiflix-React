@@ -6,7 +6,7 @@
 Notiflix is a JavaScript library for client-side non-blocking notifications, popup boxes, loading indicators, and more to that makes your React projects much better.
 
 ### Current Version
-1.3.0 [*](https://github.com/notiflix/Notiflix-React/blob/master/ReleaseNotes.md)
+1.3.1 [*](https://github.com/notiflix/Notiflix-React/blob/master/ReleaseNotes.md)
 
 ### Website
 https://www.notiflix.com/react
@@ -14,7 +14,7 @@ https://www.notiflix.com/react
 ### Documentation
 https://www.notiflix.com/documentation
 
-### Demo
+### Demo (Modules)
 - **Notiflix Notify** -> https://www.notiflix.com/#Notify
 - **Notiflix Report** -> https://www.notiflix.com/#Report
 - **Notiflix Confirm** -> https://www.notiflix.com/#Confirm
@@ -39,7 +39,7 @@ yarn add notiflix-react
 
 #### 2- Import Notiflix React
 
-###### only JS (Internal CSS)
+##### only JS (Internal CSS)
 
 ```js
 import React, { Component } from "react";
@@ -48,20 +48,20 @@ import Notiflix from "notiflix-react";
 // ...
 ```
 
-###### or CSS and JS
+##### or CSS and JS
 ```js
 import React, { Component } from "react";
 // ...
-import Notiflix from "notiflix-react/dist/notiflix-react-1.3.0";
-import "notiflix-react/dist/notiflix-react-1.3.0.css";
+import Notiflix from "notiflix-react/dist/notiflix-react-1.3.1";
+import "notiflix-react/dist/notiflix-react-1.3.1.css";
 // ...
 ```
 
 ---------
 
 
-#### 3- Initialize Notiflix React Modules
-* You have to init the modules you want to use. Notiflix includes 4 types of modules: Notify, Report, Confirm, and Loading.
+#### 3- Customize Notiflix React Modules
+* If you want to use Notiflix modules with default settings you can go to step 4. If you want to use Notiflix modules with custom options you have to initialize the modules you want to use. Notiflix includes 4 types of modules: **Notify**, **Report**, **Confirm**, and **Loading**.
 
 ```js
 class YourClass extends Component {
@@ -159,12 +159,12 @@ Notiflix.Confirm.Show(
 
   // ok button callback
   function(){
-    // codes...
+    // callback
   },
 
   // cancel button callback => v1.3.0 and next versions
   function(){
-    // codes...
+    // callback
   }
 );
 ```
@@ -185,11 +185,17 @@ Notiflix.Loading.Pulse();
 // Loader with a message
 Notiflix.Loading.Standard('Loading...');
 
+// Change the message anytime
+Notiflix.Loading.Change('Loading %20');
+
+
+
 // Remove immediately
 Notiflix.Loading.Remove();
 
 // Remove after delay - e.g. 600ms
 Notiflix.Loading.Remove(600);
+
 
 
 // Init a custom SVG Icon
@@ -235,7 +241,6 @@ Notiflix.Notify.Init({
   useFontAwesome: false,
   fontAwesomeIconStyle: 'basic', // 'shadow' - 'basic'
   fontAwesomeIconSize: '34px',
-
   plainText: true,
 
   success: {
